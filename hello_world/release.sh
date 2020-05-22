@@ -21,6 +21,7 @@ git add --all
 git commit -m "version $version"
 git tag -a "$version" -m "version $version"
 git push --tags
+git push
 
 docker tag $USERNAME/$IMAGE:latest $USERNAME/$IMAGE:$version
 
