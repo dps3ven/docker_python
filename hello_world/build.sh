@@ -1,5 +1,5 @@
 
 set -ex
 USERNAME=dps3ven
-IMAGE=python
+IMAGE=python-hello
 docker build -t $USERNAME/$IMAGE:latest .
