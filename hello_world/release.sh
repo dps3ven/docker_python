@@ -20,7 +20,7 @@ echo "version: $version"
 git add --all
 git commit -m "version $version"
 git tag -a "$version" -m "version $version"
-git push origin master --tags
+git push --tags
 
 docker tag $USERNAME/$IMAGE:latest $USERNAME/$IMAGE:$version
 
