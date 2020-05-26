@@ -3,7 +3,7 @@ set -ex
 # docker hub username
 USERNAME=dps3ven
 # image name
-IMAGE=python-hello
+IMAGE=dps3ven/python-hello
 
 # ensure we're up to date
 git pull
