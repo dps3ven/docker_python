@@ -3,13 +3,13 @@ set -ex
 # docker hub username
 USERNAME=dps3ven
 # image name
-IMAGE=dps3ven/python-hello
+IMAGE=python-hello
 
 # ensure we're up to date
 git pull
 
 # bump version
-docker run --rm -v "$PWD" $IMAGE
+docker run --rm -v "$PWD" $USERNAME/$IMAGE
 version=`cat VERSION`
 echo "version: $version"
 
